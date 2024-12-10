@@ -11,8 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  // origin: true,
-  origin: '*',
+  origin: true,
+  // origin: '*',
   credentials: true
 }));
 app.use(express.static('Image'));
