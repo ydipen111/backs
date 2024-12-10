@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: true,
+  origin: ['https://fullstack-black-three.vercel.app'],
   // origin: '*',
   credentials: true
 }));
