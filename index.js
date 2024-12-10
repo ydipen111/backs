@@ -10,11 +10,7 @@ import cookieParser from 'cookie-parser';
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-  origin: ['https://fullstack-black-three.vercel.app'],
-  // origin: '*',
-  credentials: true
-}));
+app.use(cors());
 app.use(express.static('Image'));
 
 app.use(fileUpload({
