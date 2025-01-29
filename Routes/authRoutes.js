@@ -16,7 +16,7 @@ const signUpSchema = Joi.object({
 
 const loginSchema = Joi.object({
   email: Joi.string().email().required(),
-  password: Joi.string().min(4).max(14).required()
+  password: Joi.string().min(4).max(40).required()
 })
 
 
